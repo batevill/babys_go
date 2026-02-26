@@ -1,4 +1,5 @@
 {
     "Blog": true,
-    "Content": true
+    "Content": true,
+    "Users": true
 }
