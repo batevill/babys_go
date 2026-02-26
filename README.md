@@ -1,364 +1,242 @@
-Yaxshi. Endi biz gapni romantik g‘oya darajasidan chiqarib, real product architecture darajasiga olib chiqamiz.
+# 🍼 Baby Ecosystem Platform — Roadmap
 
-Sizda:
+Quyida to'liq strukturani beraman.
 
-Laravel backend
+---
 
-Frontend + Mobile jamoa bor
-
-Premium baby ecosystem qilmoqchisiz
-
-Sheriklar: gul, o‘yinchoq, fotosessiya va boshqalar
-
-Demak siz oddiy sayt emas, multi-vendor baby ecosystem platforma quryapsiz.
-
-Quyida to‘liq strukturani beraman.
-
-1️⃣ Umumiy arxitektura (High Level)
+## 1️⃣ Umumiy Arxitektura (High Level)
 
 Sizga 4 ta asosiy app kerak:
 
-Admin / Project Owner Dashboard
+- 🖥️ **Admin / Project Owner Dashboard**
+- 👪 **Parent Web + Mobile App**
+- 🤝 **Partner (Vendor) Dashboard**
+- 🌐 **Public Landing Website**
 
-Parent Web + Mobile App
+---
 
-Partner (Vendor) Dashboard
+## 2️⃣ Project Owner Dashboard (Siz uchun)
 
-Public Landing Website
+Bu sizning control center'ingiz.
 
-2️⃣ Project Owner Dashboard (Siz uchun)
+### 📊 Dashboard asosiy modullar
 
-Bu sizning control center’ingiz.
+#### A) Analytics
 
-📊 Dashboard asosiy modullar:
-A) Analytics
+- Kunlik buyurtmalar
+- Oylik revenue
+- Eng ko'p sotilgan xizmat
+- LTV (customer lifetime value)
+- Conversion rate
 
-Kunlik buyurtmalar
+#### B) User Management
 
-Oylik revenue
+- Ota-onalar ro'yxati
+- Bola profillari
+- Premium status
+- Subscriptionlar
 
-Eng ko‘p sotilgan xizmat
+#### C) Order Management
 
-LTV (customer lifetime value)
+- Barcha buyurtmalar
+- Status (`pending`, `confirmed`, `delivered`)
+- Refund boshqaruvi
 
-Conversion rate
+#### D) Partner Management
 
-B) User Management
+- Sherik qo'shish
+- Commission foizi
+- Reyting ko'rish
+- To'lov hisoboti
 
-Ota-onalar ro‘yxati
+#### E) Subscription Control
 
-Bola profillari
+- Concierge paketlar
+- Club membership
+- Auto-renew
 
-Premium status
+---
 
-Subscriptionlar
+## 3️⃣ Ota-onalar uchun Web + Mobile
 
-C) Order Management
+> UI premium bo'lishi kerak. Minimalist. Ishonch uyg'otadigan.
 
-Barcha buyurtmalar
+### 👶 Asosiy sahifalar
 
-Status (pending, confirmed, delivered)
+#### 🏠 Home
 
-Refund boshqaruvi
+- Yangi tug'ilgan uchun paketlar
+- Premium xizmatlar
+- Tavsiya qilingan mahsulotlar
 
-D) Partner Management
+#### 👤 My Baby Profile
 
-Sherik qo‘shish
+- Bola ismi
+- Tug'ilgan sana
+- Yoshga qarab tavsiyalar
 
-Commission foizi
-
-Reyting ko‘rish
-
-To‘lov hisoboti
-
-E) Subscription Control
-
-Concierge paketlar
-
-Club membership
-
-Auto-renew
-
-3️⃣ Ota-onalar uchun Web + Mobile
-
-UI premium bo‘lishi kerak.
-Minimalist. Ishonch uyg‘otadigan.
-
-👶 Asosiy sahifalar:
-🏠 Home
-
-Yangi tug‘ilgan uchun paketlar
-
-Premium xizmatlar
-
-Tavsiya qilingan mahsulotlar
-
-👤 My Baby Profile
-
-Bola ismi
-
-Tug‘ilgan sana
-
-Yoshga qarab tavsiyalar
-
-🛒 Shop / Services
+#### 🛒 Shop / Services
 
 Kategoriya:
 
-Tug‘ruqxona chiqish paketi
+- Tug'ruqxona chiqish paketi
+- Fotosessiya
+- O'yinchoqlar
+- Concierge
 
-Fotosessiya
+#### 📦 Buyurtma berish jarayoni:
 
-O‘yinchoqlar
+1. Mahsulot tanlash
+2. Paketni customize qilish
+3. Yetkazish manzili
+4. Sana tanlash
+5. Online to'lov
+6. Tasdiqlash
 
-Concierge
+> UX juda soddalashtirilgan bo'lishi kerak.
 
-📦 Buyurtma berish jarayoni:
+---
 
-Mahsulot tanlash
+## 4️⃣ Partner (Vendor) Dashboard
 
-Paketni customize qilish
+Misol: Gul do'koni yoki o'yinchoq do'koni. Ular uchun alohida login bo'ladi.
 
-Yetkazish manzili
+### Sherik panelida:
 
-Sana tanlash
+#### 📦 Orderlar
 
-Online to‘lov
+- Yangi buyurtma
+- Qabul qilish
+- Tayyorlash
+- Yetkazildi deb belgilash
 
-Tasdiqlash
+#### 📊 Statistika
 
-UX juda soddalashtirilgan bo‘lishi kerak.
+- Qancha sotdi
+- Qancha commission ketdi
+- Qancha sof foyda
 
-4️⃣ Partner (Vendor) Dashboard
+#### 🛍 Mahsulot qo'shish
 
-Misol: Gul do‘koni yoki o‘yinchoq do‘koni.
+- Rasmlar
+- Narx
+- Tavsif
+- Stok
 
-Ular uchun alohida login bo‘ladi.
+---
 
-Sherik panelida:
-📦 Orderlar
-
-Yangi buyurtma
-
-Qabul qilish
-
-Tayyorlash
-
-Yetkazildi deb belgilash
-
-📊 Statistika
-
-Qancha sotdi
-
-Qancha commission ketdi
-
-Qancha sof foyda
-
-🛍 Mahsulot qo‘shish
-
-Rasmlar
-
-Narx
-
-Tavsif
-
-Stok
-
-5️⃣ Public Landing Website
+## 5️⃣ Public Landing Website
 
 Bu marketing uchun.
 
-Sahifalar:
+### Sahifalar:
 
-About
+- About
+- Xizmatlar
+- Qanday ishlaydi
+- Blog _(SEO uchun)_
+- Ro'yxatdan o'tish
 
-Xizmatlar
+> Bu sayt ota-onalarni platformaga olib kiradi.
 
-Qanday ishlaydi
+---
 
-Blog (SEO uchun)
-
-Ro‘yxatdan o‘tish
-
-Bu sayt ota-onalarni platformaga olib kiradi.
-
-6️⃣ Laravel Architecture (Texnik)
-
-Men sizga quyidagicha ajratishni tavsiya qilaman:
+## 6️⃣ Laravel Architecture (Texnik)
 
 Backend (Laravel API only)
 
-Auth (Sanctum / Passport)
+**Auth:** Sanctum / Passport
 
-Roles:
+**Roles:**
 
-Admin
+- `Admin`
+- `Parent`
+- `Vendor`
 
-Parent
+**Core Modules:**
+| Modul | |
+|---|---|
+| Users | Orders |
+| Babies | Subscriptions |
+| Products | Payments |
+| Services | Analytics |
+| Reviews | Commission system |
 
-Vendor
+---
 
-Core Modules:
+## 7️⃣ Database Strukturasi (Asosiy)
 
-Users
-
-Babies
-
-Products
-
-Services
-
-Orders
-
-Subscriptions
-
-Payments
-
-Analytics
-
-Reviews
-
-Commission system
-
-7️⃣ Database Strukturasi (Asosiy)
-
+```
 users
-
-id
-
-role
-
-name
-
-phone
+  ├── id
+  ├── role
+  ├── name
+  └── phone
 
 babies
-
-id
-
-user_id
-
-birth_date
+  ├── id
+  ├── user_id
+  └── birth_date
 
 vendors
-
-id
-
-user_id
-
-commission_percent
+  ├── id
+  ├── user_id
+  └── commission_percent
 
 products
-
-id
-
-vendor_id
-
-type (flower, toy, service)
+  ├── id
+  ├── vendor_id
+  └── type (flower, toy, service)
 
 orders
-
-id
-
-user_id
-
-total
-
-status
+  ├── id
+  ├── user_id
+  ├── total
+  └── status
 
 order_items
-
-order_id
-
-product_id
-
-vendor_id
-
-commission_amount
+  ├── order_id
+  ├── product_id
+  ├── vendor_id
+  └── commission_amount
 
 subscriptions
+  ├── user_id
+  ├── plan
+  └── expires_at
+```
 
-user_id
+---
 
-plan
-
-expires_at
-
-8️⃣ Revenue Model
+## 8️⃣ Revenue Model
 
 Siz 3 xil daromad olasiz:
 
-Commission (har buyurtmadan 10–25%)
+| Manba                 | Tavsif                     |
+| --------------------- | -------------------------- |
+| 💰 Commission         | Har buyurtmadan **10–25%** |
+| 📅 Subscription       | Oylik concierge            |
+| 📢 Featured placement | Vendor reklama             |
 
-Subscription (oylik concierge)
+---
 
-Featured placement (vendor reklama)
+## 9️⃣ MVP ni Qanday Boshlash Kerak?
 
-9️⃣ MVP ni Qanday Boshlash Kerak?
+### Phase 1 _(2–3 oy)_
 
-Men sizga bosqichma-bosqich beraman:
+- Faqat Baby Welcome Paket
+- 3–4 vendor
+- Oddiy order system
+- Commission
 
-Phase 1 (2–3 oy)
+### Phase 2
 
-Faqat Baby Welcome Paket
+- Subscription qo'shish
+- Analytics
+- Mobile app
 
-3–4 vendor
+### Phase 3
 
-Oddiy order system
-
-Commission
-
-Phase 2
-
-Subscription qo‘shish
-
-Analytics
-
-Mobile app
-
-Phase 3
-
-Concierge
-
-AI tavsiyalar
-
-Scaling
-
-10️⃣ Muhim savol
-
-Siz marketplace qilyapsizmi
-yoki o‘zingiz to‘plab sotadigan aggregator modelmi?
-
-Farqi katta:
-
-Marketplace:
-
-Kam risk
-
-Kam marja
-
-Tez scale
-
-Aggregator:
-
-Katta marja
-
-Katta risk
-
-Brand kuchliroq
-
-Agar xohlasangiz, men sizga:
-
-To‘liq system architecture diagram
-
-API endpoint struktura
-
-MVP roadmap
-
-6 oylik daromad prognoz
-
-Investor pitch skeleton
-
-tayyorlab beraman.
-
-Siz qaysi modelga qaror qildingiz: marketplace yoki o‘z brendingiz ostida sotish?
+- Concierge
+- AI tavsiyalar
+- Scaling
