@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Modules\Blog\Database\Seeders\BlogDatabaseSeeder;
+use Modules\Content\Database\Seeders\ContentDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,6 +24,11 @@ class DatabaseSeeder extends Seeder
             'phone' => '+998901234567',
             'email' => 'test@example.com',
             'password' => bcrypt('password'),
+        ]);
+
+        $this->call([
+            BlogDatabaseSeeder::class,
+            ContentDatabaseSeeder::class,
         ]);
     }
 }

@@ -3,6 +3,7 @@
 namespace Modules\Content\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class SeedFakeContentSeeder extends Seeder
 {

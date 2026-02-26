@@ -12,7 +12,7 @@ class BlogDatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            SeedFakeBlogPostsSeeder::class
+            SeedFakeBlogPostsSeeder::class,
         ]);
     }
 }
