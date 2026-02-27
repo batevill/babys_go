@@ -1,0 +1,69 @@
+
+   ValueError 
+
+  str_repeat(): Argument #2 ($times) must be greater than or equal to 0
+
+  at vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:463
+    459▕         $routeCountText = 'Showing ['.$routes->count().'] routes';
+    460▕ 
+    461▕         $offset = $terminalWidth - mb_strlen($routeCountText) - 2;
+    462▕ 
+  ➜ 463▕         $spaces = str_repeat(' ', $offset);
+    464▕ 
+    465▕         return $spaces.'Showing ['.$routes->count().'] routes';
+    466▕     }
+    467▕
+
+  1   vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:463
+
+  2   vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:367
+      Illuminate\Foundation\Console\RouteListCommand::determineRouteCountOutput()
+
+  3   vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:199
+      Illuminate\Foundation\Console\RouteListCommand::forCli()
+
+  4   vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:106
+      Illuminate\Foundation\Console\RouteListCommand::displayRoutes()
+
+  5   vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+      Illuminate\Foundation\Console\RouteListCommand::handle()
+
+  6   vendor/laravel/framework/src/Illuminate/Container/Util.php:43
+      Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+
+  7   vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:96
+      Illuminate\Container\Util::unwrapIfClosure()
+
+  8   vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+      Illuminate\Container\BoundMethod::callBoundMethod()
+
+  9   vendor/laravel/framework/src/Illuminate/Container/Container.php:799
+      Illuminate\Container\BoundMethod::call()
+
+  10  vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+      Illuminate\Container\Container::call()
+
+  11  vendor/symfony/console/Command/Command.php:341
+      Illuminate\Console\Command::execute()
+
+  12  vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+      Symfony\Component\Console\Command\Command::run()
+
+  13  vendor/symfony/console/Application.php:1117
+      Illuminate\Console\Command::run()
+
+  14  vendor/symfony/console/Application.php:356
+      Symfony\Component\Console\Application::doRunCommand()
+
+  15  vendor/symfony/console/Application.php:195
+      Symfony\Component\Console\Application::doRun()
+
+  16  vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:198
+      Symfony\Component\Console\Application::run()
+
+  17  vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1235
+      Illuminate\Foundation\Console\Kernel::handle()
+
+  18  artisan:16
+      Illuminate\Foundation\Application::handleCommand()
+

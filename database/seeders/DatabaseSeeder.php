@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
+            DummyDataSeeder::class,
             BlogDatabaseSeeder::class,
             ContentDatabaseSeeder::class,
         ]);
